@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bhaskar — exploring a new approach to clean energy generation through fluid-force mechanics.">
+<meta name="theme-color" content="#0a3d66">
+<title>Bhaskar — Reimagining Energy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" data-nav>
+  <a class="brand" href="#top" aria-label="Bhaskar Energy home">
+    <img src="bhaskar-power-logo.png" alt="Bhaskar Power" width="178" height="48">
+  </a>
+
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+
+  <nav id="site-nav" class="nav-links" aria-label="Primary">
+    <a href="#technology">Technology</a>
+    <a href="#applications">Applications</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a class="nav-cta" href="#contact">Partner with us</a>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-atmosphere" aria-hidden="true">
+    <div class="hero-wash"></div>
+    <div class="hero-grid"></div>
+  </div>
+
+  <div class="hero-copy">
+    <p class="brand-signal">Bhaskar</p>
+    <h1>Energy from fluid force.</h1>
+    <p class="lead">Exploring a new approach to generation by converting fluid–structure interactions into useful mechanical motion.</p>
+    <div class="actions">
+      <a class="button primary" href="#technology">Explore the technology</a>
+      <a class="button ghost" href="#contact">Collaborate with us</a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <svg class="energy-field" viewBox="0 0 560 560" role="img">
+      <defs>
+        <linearGradient id="coreGrad" x1="12%" y1="8%" x2="88%" y2="92%">
+          <stop offset="0%" stop-color="#0a4f8c"/>
+          <stop offset="55%" stop-color="#1490c8"/>
+          <stop offset="100%" stop-color="#1ca64a"/>
+        </linearGradient>
+        <linearGradient id="flowGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+          <stop offset="0%" stop-color="#1685c7" stop-opacity="0"/>
+          <stop offset="45%" stop-color="#1685c7" stop-opacity=".55"/>
+          <stop offset="100%" stop-color="#1ca64a" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#1685c7" stop-opacity=".35"/>
+          <stop offset="55%" stop-color="#1685c7" stop-opacity=".08"/>
+          <stop offset="100%" stop-color="#1685c7" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="8"/>
+        </filter>
+      </defs>
+
+      <circle class="field-glow" cx="280" cy="280" r="210" fill="url(#glowGrad)"/>
+
+      <g class="streamlines" fill="none" stroke="url(#flowGrad)" stroke-width="1.25">
+        <path class="flow f1" d="M40 210 C160 170, 240 230, 280 280 S400 360, 520 330"/>
+        <path class="flow f2" d="M50 280 C150 250, 220 270, 280 280 S400 290, 510 260"/>
+        <path class="flow f3" d="M45 350 C160 340, 230 310, 280 280 S390 210, 515 200"/>
+        <path class="flow f4" d="M70 160 C180 140, 250 220, 280 280 S360 390, 490 390"/>
+      </g>
+
+      <g class="rings" fill="none" stroke="#1a1a1a" stroke-opacity=".18">
+        <g class="ring-spin rs1">
+          <circle cx="280" cy="280" r="118"/>
+        </g>
+        <g class="ring-spin rs2">
+          <ellipse cx="280" cy="280" rx="168" ry="152" transform="rotate(-18 280 280)"/>
+        </g>
+        <g class="ring-spin rs3">
+          <ellipse cx="280" cy="280" rx="228" ry="198" transform="rotate(12 280 280)"/>
+        </g>
+      </g>
+
+      <g class="nodes">
+        <g class="orbit-track ot1">
+          <circle cx="398" cy="280" r="5" fill="#111"/>
+        </g>
+        <g class="orbit-track ot2">
+          <circle cx="112" cy="280" r="4.5" fill="#1685c7"/>
+        </g>
+        <g class="orbit-track ot3">
+          <circle cx="508" cy="280" r="4" fill="#111"/>
+        </g>
+      </g>
+
+      <g class="rotor">
+        <circle cx="280" cy="280" r="58" fill="url(#coreGrad)" filter="url(#softBlur)" opacity=".45"/>
+        <circle cx="280" cy="280" r="52" fill="url(#coreGrad)"/>
+        <g class="blades" stroke="#fff" stroke-opacity=".35" stroke-width="1.5" fill="none">
+          <path d="M280 238 L280 252"/>
+          <path d="M280 308 L280 322"/>
+          <path d="M238 280 L252 280"/>
+          <path d="M308 280 L322 280"/>
+          <path d="M250 250 L260 260"/>
+          <path d="M300 300 L310 310"/>
+          <path d="M310 250 L300 260"/>
+          <path d="M250 310 L260 300"/>
+        </g>
+        <circle cx="280" cy="280" r="18" fill="#fff" fill-opacity=".12"/>
+        <circle cx="280" cy="280" r="8" fill="#fff" fill-opacity=".9"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="statement reveal">
+  <p class="eyebrow">The question</p>
+  <h2>Can we unlock useful mechanical energy from the forces already present in a fluid?</h2>
+  <p>Bhaskar investigates the possibility of creating a controlled force imbalance through differences in projected area, producing motion that could ultimately be coupled to an electrical generator.</p>
+</section>
+
+<section id="technology" class="dark-section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Our approach</p>
+    <h2>A different way to think about energy.</h2>
+  </div>
+  <div class="tech-grid">
+    <article class="tech-card reveal">
+      <span class="num">01</span>
+      <h3>Fluid interaction</h3>
+      <p>A solid body interacts with a surrounding fluid under controlled conditions.</p>
+    </article>
+    <article class="tech-card reveal">
+      <span class="num">02</span>
+      <h3>Projected-area difference</h3>
+      <p>Geometry is used to create a difference in the effective area exposed to the fluid.</p>
+    </article>
+    <article class="tech-card reveal">
+      <span class="num">03</span>
+      <h3>Force imbalance</h3>
+      <p>The resulting difference in force can generate a net mechanical tendency for motion.</p>
+    </article>
+    <article class="tech-card reveal">
+      <span class="num">04</span>
+      <h3>Mechanical output</h3>
+      <p>The motion can be investigated as a potential input to an energy-conversion system.</p>
+    </article>
+  </div>
+  <div class="technical-note reveal">
+    <strong>Research status</strong>
+    <span>The concept is currently being developed through quantitative analysis, modelling and experimental validation. Claims about net energy output remain subject to rigorous thermodynamic and mechanical testing.</span>
+  </div>
+</section>
+
+<section id="applications" class="applications">
+  <div class="section-head reveal">
+    <p class="eyebrow">Potential</p>
+    <h2>Built for questions that matter.</h2>
+  </div>
+  <div class="app-grid">
+    <div class="app reveal"><span>01</span><h3>Distributed power</h3><p>Explore whether the mechanism can support localized generation systems.</p></div>
+    <div class="app reveal"><span>02</span><h3>Industrial systems</h3><p>Investigate integration with fluid-rich industrial environments.</p></div>
+    <div class="app reveal"><span>03</span><h3>Remote energy</h3><p>Study applications where reliable local generation could be valuable.</p></div>
+    <div class="app reveal"><span>04</span><h3>Future infrastructure</h3><p>Develop a platform for entirely new energy-system architectures.</p></div>
+  </div>
+</section>
+
+<section id="roadmap" class="roadmap">
+  <div class="section-head reveal">
+    <p class="eyebrow">Roadmap</p>
+    <h2>From hypothesis to hardware.</h2>
+  </div>
+  <ol class="timeline">
+    <li class="step active reveal"><b>01</b><span>Concept</span><p>Define mechanism and governing assumptions.</p></li>
+    <li class="step reveal"><b>02</b><span>Quantitative model</span><p>Validate forces, energy balance and system behaviour.</p></li>
+    <li class="step reveal"><b>03</b><span>Prototype</span><p>Build and experimentally test the mechanism.</p></li>
+    <li class="step reveal"><b>04</b><span>Pilot</span><p>Characterize performance under realistic conditions.</p></li>
+    <li class="step reveal"><b>05</b><span>Scale</span><p>Assess economics, reliability and deployment pathways.</p></li>
+  </ol>
+</section>
+
+<section class="validation reveal">
+  <div>
+    <p class="eyebrow">Open science mindset</p>
+    <h2>We want the physics to prove the idea.</h2>
+  </div>
+  <p>Bhaskar is being developed with an emphasis on measurable performance, transparent assumptions and independent validation. The goal is not to make extraordinary claims — it is to test an extraordinary hypothesis rigorously.</p>
+</section>
+
+<section id="contact" class="contact reveal">
+  <p class="eyebrow">Let’s build the future</p>
+  <h2>Interested in the science behind Bhaskar?</h2>
+  <p>We are looking for researchers, engineers, institutions and strategic partners interested in exploring the technology.</p>
+  <a class="button primary" href="mailto:hello@bhaskar.energy">Start a conversation</a>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 Bhaskar</span>
+  <span>Energy · Mechanics · Deep Tech</span>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
